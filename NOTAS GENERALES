@@ -1,0 +1,42 @@
+JS hace un monton de cosas en la web
+
+-el lenguaje de la web
+-añade interactividad a tus sitios web
+-desarrollo de backend y front end
+-desarrollo de apliacaciones moviles y de escritorio
+
+-----------------------------------------------------
+INTERACTIVIDAD Y COMPORTAMIENTO AL SITIO web
+
+-Reaccionar a eventos del usuario en nuestra pagina web
+-Validar formularios
+-Procesar Informacion
+-mostrar mapas o ubicaciones
+
+-----------------------------------------------------
+Javascript es un lenguaje maduro y estable  
+
+Para que en Html podamos agregar directamente el codigo Js debemos de agregar las etiquetas
+<script></script>
+
+el lenguaje de JS no se compila pues cada navegador tiene su interprete
+
+tanto como Css se recomienda tener el codigo aparte con un archivo .js
+
+en Javascript hay dos formas de comentar codigo tanto de una sola linea: //
+como en varias /* */
+
+
+Javascript se conoce como un lenguaje dinamico no tenemos que declarar el tipo de dato
+-----------------------------------------------------
+Cuando nos referimos a un tipo de datos es al valor que esta variable contendra
+
+Tipos de datos STRING
+
+con la palabra reservada typeof podemos saber el tipo de variables que estamos utilizando
+
+al elegir el contenido de un tipo String no podemos mezclar "" y '' al mismo tiempo ejemplo= "carlitos' xxx
+
+--------------------------------------------------------
+
+con el metodo indexOf cuando el resultado es -1 nos estara diciendo que la palabra que intentamos buscar no fue encontrada mientras que si es mayor a -1 si la encontro
