@@ -40,3 +40,118 @@ al elegir el contenido de un tipo String no podemos mezclar "" y '' al mismo tie
 --------------------------------------------------------
 
 con el metodo indexOf cuando el resultado es -1 nos estara diciendo que la palabra que intentamos buscar no fue encontrada mientras que si es mayor a -1 si la encontro
+
+la ventana global nos sirve para poder todo lo que esta disponible en la Javascript
+
+// concatenacion con Template Strings-String literals
+// con $ denotaremos las variables
+console.log(`Nombre Cliente:${nombre} Email ${email}`);
+
+booleanos solo puede ser true o false
+
+--------------------------------------------------------OBJETOS EN Javascript
+son una de las cosas mas utilizadas 
+
+TIPO_DATO Nombre={
+    PROPIEDAD:VALOR,
+    PROPIEDAD2:VALOR2,
+    ETC
+}
+
+--------------------------------------------
+
+// sabemos que agregar y eliminar propiedades son importantes para un objeto asi que veremos como agregar o eliminar
+
+// Agregar propiedades
+
+producto.imagen="imagen.jpg";
+
+// Eliminar propiedades
+
+delete producto.disponible;
+
+console.log(producto);
+------------------------------------------
+
+DESTRUCTURING   
+
+// Destructuring en JS nos sirve para extraer y declarar una propiedad de un objeto
+
+// la nueva forma para hacerlo es la siguiente
+
+const {precio}=producto;
+
+console.log(precio);
+---------------------------------------------
+
+// existen metodos en js que nos permiten hacer un monton de cosas en general y en este caso veremos dos Frezee y seal
+
+// con Freeze  haremos que no podamos modificar,agregar o eliminar cualquier propiedad en nuestros objetos
+Object.freeze(producto);
+
+producto.precio=300;
+
+// y para saber si un objeto esta  bloquead podemos hacer lo siguiente
+// si retorna true=esta sellado
+console.log(Object.isFrozen(producto));
+
+// Seal  nos permitira modificar propiedades mas no eliminar o agregar
+
+Object.seal(producto);
+producto.precio="nuevo precio";
+
+// y con esta sintaxis podemos unir varios objetos
+const nuevoProducto={...producto,...medidas};
+--------------------------------------------------}
+ARREGLOS 
+
+// Arreglos  son una forma de almacenar muchos datos dentro de una variables
+
+// forma de incializar un arreglo            
+// tipo identificador=[valores,valores,valores];
+const numeros=[10,20,30,40,50];
+console.log(numeros);
+-------------------------------------------------------
+funciones
+/funciones  las funciones son formas de hacer que nuestro codigo  mas organizado y preparado para reutilizarlo
+
+/* ¿que son las funciones? nos permiten agrupar lineas de codigo en tareas con un nombre para realizar todo lo que agrupe en dicha tarea */
+
+// Declaracion de una funcion                  function nombre(parametros){}
+
+function sumar()
+{
+console.log(10+10);
+}
+
+//expresion de una funcion
+
+const sumar2=function()
+{
+    console.log(3+3);
+}
+
+una funcion es un fragmento de codigo que al llamarse ejecuta una accion y al ejecutarse sobre un objeto puede ejecutar una accion sobre este
+
+metodo es un conjunto de funcionalidades que dependen del objeto ademas de que podemos verlo puesto que despues de la variables podemos acceder con un "."
+
+los parametros son  variables que existiran dentro de dicha funcion  y argumentos de la funcion son los valores que le pasemos a la funcion para ejecutarse
+---------------------------------------------------
+
+//ahora veremos algo llamado las estructuras de control en js por lo general cuando queremos comprobar las
+/*
+if(condicion)
+{
+    sentencias
+}
+por si no se cumpliera el if podemos utilizar el else if
+else if(condicion)
+{
+    sentencias
+}
+y por si nunca de las anteriores se cumpla por asi decirlo los casos default  encontrariamos perfecto el else
+
+else
+{
+    sentencias
+}

@@ -1,0 +1,31 @@
+
+{
+    "empleados":
+    [
+
+        {
+            "id":1,
+            "nombre":"pepe",
+            "puesto":"programador"
+            
+        },
+        {
+            "id":2,
+            "nombre":"Diana",
+            "puesto":"programador"
+            
+        },
+        {
+            "id":3,
+            "nombre":"Norma",
+            "puesto":"programador"
+            
+        },
+        {
+            "id":4,
+            "nombre":"Ana Pau",
+            "puesto":"programador"
+            
+        }
+    ]
+}
